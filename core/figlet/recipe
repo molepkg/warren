@@ -1,0 +1,7 @@
+name=figlet
+version=git
+desc=large ASCII art text
+source=git:https://github.com/cmatsuoka/figlet.git
+deps=
+build=make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} PREFIX={{PREFIX}} install

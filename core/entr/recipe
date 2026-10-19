@@ -1,0 +1,7 @@
+name=entr
+version=git
+desc=run commands when files change
+source=git:https://github.com/eradman/entr.git
+deps=
+build=./configure && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} PREFIX={{PREFIX}} install

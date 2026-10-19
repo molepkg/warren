@@ -1,0 +1,7 @@
+name=vis
+version=git
+desc=modal text editor with structural regex
+source=git:https://github.com/martanne/vis.git
+deps=
+build=./configure --prefix={{PREFIX}} && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} install

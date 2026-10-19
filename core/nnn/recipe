@@ -1,0 +1,7 @@
+name=nnn
+version=git
+desc=fast terminal file manager
+source=git:https://github.com/jarun/nnn.git
+deps=
+build=make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} PREFIX={{PREFIX}} install

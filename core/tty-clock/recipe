@@ -1,0 +1,7 @@
+name=tty-clock
+version=git
+desc=digital clock in the terminal
+source=git:https://github.com/xorg62/tty-clock.git
+deps=
+build=make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} PREFIX={{PREFIX}} install

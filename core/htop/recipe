@@ -1,0 +1,7 @@
+name=htop
+version=git
+desc=interactive process viewer
+source=git:https://github.com/htop-dev/htop.git
+deps=
+build=./autogen.sh && ./configure --prefix={{PREFIX}} && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} install

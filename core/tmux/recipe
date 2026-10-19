@@ -1,0 +1,7 @@
+name=tmux
+version=git
+desc=terminal multiplexer
+source=git:https://github.com/tmux/tmux.git
+deps=
+build=sh autogen.sh && ./configure --prefix={{PREFIX}} && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} install

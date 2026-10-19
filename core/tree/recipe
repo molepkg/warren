@@ -1,0 +1,7 @@
+name=tree
+version=git
+desc=recursive directory listing
+source=git:https://github.com/Old-Man-Programmer/tree.git
+deps=
+build=make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} PREFIX={{PREFIX}} install

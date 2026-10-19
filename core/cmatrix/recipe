@@ -1,0 +1,7 @@
+name=cmatrix
+version=git
+desc=matrix rain in the terminal
+source=git:https://github.com/abishekvashok/cmatrix.git
+deps=
+build=autoreconf -i && ./configure --prefix={{PREFIX}} && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} install

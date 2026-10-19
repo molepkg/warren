@@ -1,0 +1,7 @@
+name=jq
+version=git
+desc=lightweight JSON processor
+source=git:https://github.com/jqlang/jq.git
+deps=
+build=autoreconf -i && ./configure --prefix={{PREFIX}} --with-oniguruma=builtin && make -j{{JOBS}}
+install=make DESTDIR={{DESTDIR}} install
